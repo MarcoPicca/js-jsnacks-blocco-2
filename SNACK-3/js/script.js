@@ -2,18 +2,29 @@
 // Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
 
 
-function paroleForti () {
-    let userPrimaParola = prompt('inserisci la prima parola');
-    let userSecondaParola = prompt('inserisci la seconda parola');
+let userPrimaParola = prompt('inserire la prima parola');
+let userSecondaParola = prompt('inserire la seconda parola');
 
-    if (userPrimaParola.length === userSecondaParola.length) {
-        let risultatoPari = userPrimaParola + '' + userSecondaParola;
-        return risultatoPari;
-    } else if (userPrimaParola.length < userSecondaParola.length){
-        return userPrimaParola;
+
+
+
+
+
+
+function paroleForti (primaParola, secondaParola) {
+    if(primaParola.length === secondaParola.length){
+        return true;
     } else {
-        return userSecondaParola;
+        return false;
     }
 }
 
-console.log(paroleForti);
+
+if (paroleForti (userPrimaParola, userSecondaParola)){
+    console.log(userPrimaParola, userSecondaParola);
+} else if (userPrimaParola > userSecondaParola){
+    console.log(userPrimaParola);
+} else {
+    console.log(userSecondaParola);
+}
+
