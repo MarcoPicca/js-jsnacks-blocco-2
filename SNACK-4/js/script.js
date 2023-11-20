@@ -3,11 +3,14 @@
 
 
 function numeri (primoNumero, secondoNumero){
-    if (secondoNumero % primoNumero === 0){
+    if(primoNumero === secondoNumero){
+        return primoNumero;
+    }
+    else if (primoNumero % secondoNumero === 0){
         return true;
     } else {
         return false;
     }
 }
 
-console.log(numeri (2, 8));
+console.log(numeri (2, 6));
