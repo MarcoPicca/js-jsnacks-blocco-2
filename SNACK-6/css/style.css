@@ -11,3 +11,9 @@ section{
     border: 2px solid black;
 }
 
+.item-square{
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+}
+

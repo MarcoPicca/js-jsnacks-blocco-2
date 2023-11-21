@@ -10,9 +10,11 @@ function generateSquare () {
     return newSquareElement;
 }
 
-const bodyContentElement = document.querySelector('body.section.main-contant');
+const bodyContentElement = document.querySelector('body.section.main-content');
 
-for (let i = 0; i < userNumber.length; i++){
-    const currentSquare = generateSquare();
-    bodyContentElement.appendChild(currentSquare);
+
+
+for (let i = 0; i < userNumber; i++){
+   
+    bodyContentElement.appendChild(generateSquare());
 }
