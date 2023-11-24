@@ -14,4 +14,13 @@ const zucchine = [
     { varieta: 'Marina', peso: 160, lunghezza: 16 },
     { varieta: 'Montana', peso: 210, lunghezza: 21 },
     { varieta: 'Corta', peso: 175, lunghezza: 17 }
-  ];
+];
+
+let sommaPeso = 0;
+
+for (let i = 0; i < zucchine.length; i++) {
+    const zucchinaAttuale = zucchine[i];
+    sommaPeso = sommaPeso + zucchine[i].peso; 
+    console.log(zucchinaAttuale);   
+}
+console.log(sommaPeso);
